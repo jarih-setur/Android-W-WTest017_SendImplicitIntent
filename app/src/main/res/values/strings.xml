@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WTest017_SendImplicitIntent</string>
+    <string name="chooser_title">Choose ...</string>
+</resources>
