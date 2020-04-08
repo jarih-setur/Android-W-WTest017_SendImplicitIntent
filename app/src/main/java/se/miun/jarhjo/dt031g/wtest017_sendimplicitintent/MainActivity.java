@@ -33,11 +33,9 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, message);
         intent.setType("text/plain");
         String title = getResources().getString(R.string.chooser_title);
-// Create intent to show the chooser dialog
+        // Create intent to show the chooser dialog
         Intent chooser = Intent.createChooser(intent, title);
-
-
-// Verify that the intent will resolve to an activity
+        // Verify that the intent will resolve to an activity
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(chooser);
         }
